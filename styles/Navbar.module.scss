@@ -66,11 +66,25 @@
 }
 @media screen and (max-width: 480px) {
   .container {
+    padding: 0 1em;
+    .item:nth-child(1) {
+      flex: 1;
+      .callbutton {
+        display: none;
+      }
+      .texts {
+        width: max-content;
+      }
+    }
     .item:nth-child(2) {
-      display: none;
+      .list {
+        .listitem {
+          display: none;
+        }
+      }
     }
     .item:nth-child(1) {
-      flex: 3;
+      flex: 1;
     }
   }
 }
