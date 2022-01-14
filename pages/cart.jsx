@@ -3,8 +3,9 @@ import Link from "next/link";
 import React from "react";
 import styles from "../styles/Cart.module.scss";
 const Cart = () => {
-  return <div className={styles.container}>
-     <div className={styles.left}>
+  return (
+    <div className={styles.container}>
+      <div className={styles.left}>
         <table className={styles.table}>
           <tr className={styles.trTitle}>
             <th>Product</th>
@@ -24,7 +25,6 @@ const Cart = () => {
                   alt=""
                 />
               </div>
-              
             </td>
             <td>
               <span className={styles.name}>CORALZO</span>
@@ -87,12 +87,13 @@ const Cart = () => {
           <div className={styles.totalText}>
             <b className={styles.totalTextTitle}>Total:</b>$79.60
           </div>
-          <Link href="/orders/54543">
-          <button className={styles.button}>CHECKOUT NOW!</button>
+          <Link href="/orders/54543" passHref={true}>
+            <button className={styles.button}>CHECKOUT NOW!</button>
           </Link>
         </div>
       </div>
-  </div>;
+    </div>
+  );
 };
- 
+
 export default Cart;
