@@ -6,7 +6,7 @@ import PizzaList from "../components/PizzaList";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Pizza restaurant</title>
         <meta name="description" content="best pizza restaurant in town" />
