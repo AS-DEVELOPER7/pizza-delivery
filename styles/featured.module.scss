@@ -1,0 +1,33 @@
+.container {
+  height: calc(100vh - 3em);
+  overflow: hidden;
+  .arrowcontainer {
+    position: absolute;
+    z-index: 3;
+    width: 10%;
+    height: 30%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+  }
+  .wrapper {
+    width: 300vw;
+    height: 100%;
+    display: flex;
+    transition: all 1s ease-in-out;
+    .imgContainer {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+  }
+}
+@media screen and(max-width:480px) {
+  .container{
+    height:40vh;
+    .arrowcontainer{
+      top:-50%
+    }
+  }
+}

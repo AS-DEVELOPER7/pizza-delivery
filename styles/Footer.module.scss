@@ -1,0 +1,47 @@
+.container {
+  background-color: #222;
+  display: flex;
+  .item {
+    flex: 1;
+    position: relative;
+    display: flex;
+    .card {
+      flex: 1;
+      padding: 0 1em;
+      .title {
+        font-size: 1em;
+        color: #b7903c;
+      }
+      .text {
+        color: lightgray;
+      }
+      .motto {
+        color: rgb(211, 211, 211);
+      }
+    }
+    .card:first-child {
+      align-self: center;
+    }
+  }
+  .item:last-child {
+    flex: 2;
+    padding: 2em;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    .item:first-child {
+      display: none;
+    }
+    .item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      .card:first-child {
+        padding: 0 0.5em;
+        width: 100%;
+      }
+    }
+  }
+}
