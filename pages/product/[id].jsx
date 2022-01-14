@@ -85,9 +85,8 @@ const Product = () => {
         </div>
         <div className={styles.add}>
           <input type="number" defaultValue={1} className={styles.quantity} />
-            <Link href="/cart">
-          <button className={styles.button}>
-          Add to Cart</button>
+          <Link href="/cart" passHref={true}>
+            <button className={styles.button}>Add to Cart</button>
           </Link>
         </div>
       </div>
